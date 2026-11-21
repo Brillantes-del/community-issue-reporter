@@ -44,3 +44,9 @@ The application uses a simple single-page architecture:
 
 ## Project Limitations
 This is a prototype. Reports are saved only in the browser's localStorage. They are not shared between different users or devices.
+
+## Future Improvements
+- Add an administrator dashboard.
+- Allow residents to upload issue photos.
+- Connect the application to a shared database.
+- Allow administrators to update report statuses.

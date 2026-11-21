@@ -122,3 +122,52 @@ header p {
 .report-section button:hover {
     background-color: #294d75;
 }
+
+
+/* Submitted Reports */
+.reports-section {
+    background-color: white;
+    margin-top: 25px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.reports-section h2 {
+    color: #1e3a5f;
+    font-size: 22px;
+}
+
+.empty-message {
+    color: #888;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.report-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 18px;
+    margin-top: 15px;
+}
+
+.report-card h3 {
+    color: #1e3a5f;
+    margin-bottom: 8px;
+}
+
+.report-card p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.report-status {
+    display: inline-block;
+    background-color: #fef3c7;
+    color: #92400e;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-top: 10px;
+}

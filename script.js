@@ -2,7 +2,10 @@
 const issueForm = document.getElementById("issueForm");
 const reportsList = document.getElementById("reportsList");
 
-let reports = [];
+// Load saved reports from localStorage
+let reports = JSON.parse(localStorage.getItem("reports")) || [];
+
+displayReports();
 
 issueForm.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -15,6 +18,9 @@ issueForm.addEventListener("submit", function(event) {
     };
 
     reports.push(issue);
+
+    // Save reports to localStorage
+    localStorage.setItem("reports", JSON.stringify(reports));
 
     displayReports();
 

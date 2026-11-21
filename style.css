@@ -55,3 +55,70 @@ header p {
     color: #666;
     max-width: 650px;
 }
+
+
+/* Report Form */
+.report-section {
+    background-color: white;
+    margin-top: 25px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.report-section h2 {
+    color: #1e3a5f;
+    font-size: 22px;
+}
+
+.section-description {
+    color: #666;
+    margin: 5px 0 20px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1e3a5f;
+}
+
+.report-section button {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.report-section button:hover {
+    background-color: #294d75;
+}

@@ -16,7 +16,6 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="container">
         <section class="welcome">
             <h2>Welcome to Our Community</h2>
@@ -25,7 +24,64 @@
                 Together, we can make our surroundings safer and better.
             </p>
         </section>
+
+        <section class="report-section">
+		    <h2>Report a Community Issue</h2>
+		    <p class="section-description">
+		        Provide the details of the issue you want to report.
+		    </p>
+
+		    <form id="issueForm">
+
+		        <div class="form-group">
+		            <label for="title">Issue Title</label>
+		            <input
+		                type="text"
+		                id="title"
+		                placeholder="Enter issue title"
+		                required
+		            >
+		        </div>
+
+		        <div class="form-group">
+		            <label for="category">Category</label>
+		            <select id="category" required>
+		                <option value="">Select a category</option>
+		                <option value="Garbage Disposal">Garbage Disposal</option>
+		                <option value="Road Maintenance">Road Maintenance</option>
+		                <option value="Broken Streetlight">Broken Streetlight</option>
+		                <option value="Drainage Problem">Drainage Problem</option>
+		                <option value="Other">Other</option>
+		            </select>
+		        </div>
+
+		        <div class="form-group">
+		            <label for="location">Location</label>
+		            <input
+		                type="text"
+		                id="location"
+		                placeholder="Enter the location"
+		                required
+		            >
+		        </div>
+
+		        <div class="form-group">
+		            <label for="description">Description</label>
+		            <textarea
+		                id="description"
+		                rows="4"
+		                placeholder="Describe the issue..."
+		                required
+		            ></textarea>
+		        </div>
+
+		        <button type="submit">Submit Report</button>
+
+		    </form>
+		</section>
     </main>
+
+    
 
 </body>
 </html>

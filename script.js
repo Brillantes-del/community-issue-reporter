@@ -1,8 +1,8 @@
 
 const issueForm = document.getElementById("issueForm");
 const reportsList = document.getElementById("reportsList");
+const formMessage = document.getElementById("formMessage");
 
-// Load saved reports from localStorage
 let reports = JSON.parse(localStorage.getItem("reports")) || [];
 
 displayReports();
@@ -17,14 +17,24 @@ issueForm.addEventListener("submit", function(event) {
         description: document.getElementById("description").value.trim()
     };
 
+    if (
+        issue.title.length < 3 ||
+        issue.location.length < 3 ||
+        issue.description.length < 10
+    ) {
+        formMessage.textContent = "Please provide valid issue details.";
+        formMessage.className = "error-message";
+        return;
+    }
+
     reports.push(issue);
 
-    // Save reports to localStorage
     localStorage.setItem("reports", JSON.stringify(reports));
 
     displayReports();
 
-    alert("Your issue has been submitted successfully!");
+    formMessage.textContent = "Your report was submitted successfully!";
+    formMessage.className = "success-message";
 
     issueForm.reset();
 });

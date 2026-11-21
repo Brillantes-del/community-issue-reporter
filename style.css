@@ -171,3 +171,18 @@ header p {
     font-size: 12px;
     margin-top: 10px;
 }
+
+
+/* Form Messages */
+.success-message {
+    color: #15803d;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.error-message {
+    color: #dc2626;
+    margin-top: 15px;
+    font-size: 14px;
+}
+

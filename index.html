@@ -30,54 +30,62 @@
 		    <p class="section-description">
 		        Provide the details of the issue you want to report.
 		    </p>
+		    
+			<form id="issueForm">
 
-		    <form id="issueForm">
+			    <div class="form-group">
+			        <label for="title">Issue Title</label>
+			        <input
+			            type="text"
+			            id="title"
+			            placeholder="Enter issue title"
+			            minlength="3"
+			            maxlength="100"
+			            required
+			        >
+			    </div>
 
-		        <div class="form-group">
-		            <label for="title">Issue Title</label>
-		            <input
-		                type="text"
-		                id="title"
-		                placeholder="Enter issue title"
-		                required
-		            >
-		        </div>
+			    <div class="form-group">
+			        <label for="category">Category</label>
+			        <select id="category" required>
+			            <option value="">Select a category</option>
+			            <option value="Garbage Disposal">Garbage Disposal</option>
+			            <option value="Road Maintenance">Road Maintenance</option>
+			            <option value="Broken Streetlight">Broken Streetlight</option>
+			            <option value="Drainage Problem">Drainage Problem</option>
+			            <option value="Other">Other</option>
+			        </select>
+			    </div>
 
-		        <div class="form-group">
-		            <label for="category">Category</label>
-		            <select id="category" required>
-		                <option value="">Select a category</option>
-		                <option value="Garbage Disposal">Garbage Disposal</option>
-		                <option value="Road Maintenance">Road Maintenance</option>
-		                <option value="Broken Streetlight">Broken Streetlight</option>
-		                <option value="Drainage Problem">Drainage Problem</option>
-		                <option value="Other">Other</option>
-		            </select>
-		        </div>
+			    <div class="form-group">
+			        <label for="location">Location</label>
+			        <input
+			            type="text"
+			            id="location"
+			            placeholder="Enter the location"
+			            minlength="3"
+			            maxlength="150"
+			            required
+			        >
+			    </div>
 
-		        <div class="form-group">
-		            <label for="location">Location</label>
-		            <input
-		                type="text"
-		                id="location"
-		                placeholder="Enter the location"
-		                required
-		            >
-		        </div>
+			    <div class="form-group">
+			        <label for="description">Description</label>
+			        <textarea
+			            id="description"
+			            rows="4"
+			            placeholder="Describe the issue..."
+			            minlength="10"
+			            maxlength="500"
+			            required
+			        ></textarea>
+			    </div>
 
-		        <div class="form-group">
-		            <label for="description">Description</label>
-		            <textarea
-		                id="description"
-		                rows="4"
-		                placeholder="Describe the issue..."
-		                required
-		            ></textarea>
-		        </div>
+			    <button type="submit">Submit Report</button>
 
-		        <button type="submit">Submit Report</button>
+			    <p id="formMessage" role="status"></p>
 
-		    </form>
+			</form>
 		</section>
 
 		<section class="reports-section">
